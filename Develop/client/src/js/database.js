@@ -32,7 +32,7 @@ export const getDb = async () => {
 
   const textDb = await openDB('jate', 1);
 
-  const tx = jateDb.transaction('jate', 'readonly');
+  const tx = textDb.transaction('jate', 'readonly');
 
   const store = tx.objectStore('jate');
 
